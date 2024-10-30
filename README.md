@@ -1,4 +1,4 @@
-### Project: <x-picture> Component for Optimized Image Handling in WordPress (Sage-based)
+###  <x-picture> Component for Optimized Image Handling in WordPress (Sage Roots.io)
 
 The <x-picture> component provides a refined and efficient solution for image handling in WordPress projects based on the Roots.io Sage framework. It minimizes reliance on default WordPress media processing, focusing instead on custom-optimized image rendering and management. This component bypasses WordPress’s default media handling and enables full control over image optimization, format, dimensions, and focal cropping—ideal for developers aiming for performance-driven, streamlined WordPress solutions.
 
