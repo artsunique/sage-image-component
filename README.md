@@ -40,11 +40,40 @@ resources/
 
 ### Installation and Setup
 
-1. Add Dependencies to Your Theme Folder: 	
-•	Spatie Image: https://github.com/spatie/image
-•	Spatie Image Optimizer: https://github.com/spatie/image-optimizer
+1. Add Spatie Dependencies to Your Theme Folder: composer require spatie/image, composer require spatie/image-optimizer
 1. add-to-function.php the Custom Cleanup Function to functions.php.
 2. add picture.blade.php to resources/views/component/picture.blade.php 
 
 ### Usage
+WordPress Thumbnail (Featured Image)
+
+<x-picture 
+    :src="get_post_thumbnail_id()" 
+    width="800" 
+    height="600" 
+    quality="80" 
+    format="jpg" 
+    alt="Featured Image"
+/>
+
+
+ACF Image Field
+<x-picture 
+    :src="'my_acf_image_field'"  {{-- Replace with your ACF field name --}}
+    width="400" 
+    height="300" 
+    quality="70" 
+    format="webp" 
+    alt="Custom ACF Image"
+/>
+
+Static Image
+<x-picture 
+    src="https://yourwebsite.com/wp-content/uploads/2024/10/static-image.jpg" 
+    width="600" 
+    height="400" 
+    quality="90" 
+    format="png" 
+    alt="Static Image"
+/>
 
